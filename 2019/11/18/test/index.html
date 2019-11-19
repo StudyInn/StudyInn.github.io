@@ -28,7 +28,7 @@
   
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1574137318417">
+  <link rel="stylesheet" href="/css/style.css?v=1574137448766">
 </head>
 
 <body class="mdui-drawer-body-left">
@@ -197,19 +197,19 @@
 
   
   <section class="nexmoe-comment">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
-<div id="gitalk"></div>
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
-<script type="text/javascript">
-    var gitalk = new Gitalk({
-        clientID: '90c8b6568473b17b08a3',
-        clientSecret: '33a95d7dbbbd4a79df6a775b84c1071d30bb9da1',
-        id: window.location.pathname,
-        repo: 'StudyInn.github.io',
-        owner: 'StudyInn',
-        admin: 'StudyInn'
-    })
-    gitalk.render('gitalk')
+    <div id="gitment"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'StudyInn', // 你的 GitHub ID
+    repo: 'StudyInn.github.io', // 存储评论的 repo
+    oauth: {
+        client_id: '90c8b6568473b17b08a3', // 你的 client ID
+        client_secret: '33a95d7dbbbd4a79df6a775b84c1071d30bb9da1' // 你的 client secret
+    },
+})
+gitment.render('gitment')
 </script>
 </section>
 </div>
@@ -228,7 +228,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1574137318426"></script>
+<script src="/js/app.js?v=1574137448771"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
