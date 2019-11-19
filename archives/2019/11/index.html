@@ -24,7 +24,7 @@
   
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1574149633873">
+  <link rel="stylesheet" href="/css/style.css?v=1574158654952">
 </head>
 
 <body class="mdui-drawer-body-left">
@@ -48,7 +48,7 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>1</div>
+        <div><span>文章</span>2</div>
         <div><span>标签</span>1</div>
         <div><span>分类</span>1</div>
     </div>
@@ -101,8 +101,8 @@
         
 
         <li class="category-list-item">
-          <a class="category-list-link" href="/categories/计算机网络/">计算机网络</a>
-          <span class="category-list-count">1</span>
+          <a class="category-list-link" href="/categories/课程学习/">课程学习</a>
+          <span class="category-list-count">2</span>
         </li>
 
         
@@ -144,10 +144,313 @@
         <section class="nexmoe-posts" id="brand-waterfall">
     
     <div class="nexmoe-post">
+        <a href="/2019/11/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-ch2/">
+            <div class="nexmoe-post-cover mdui-ripple"> 
+                
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1574168652977&di=984b0ce4df0ea3921fab88036d5d0313&imgtype=0&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F30adcbef76094b3678428e53a2cc7cd98c109db8.jpg" alt="计算机网络-ch2">
+                
+                <h1>计算机网络-ch2</h1>
+            </div>
+        </a>
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2019年11月19日</a>
+            <a><i class="nexmoefont icon-areachart"></i>3.1k 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 12 分钟</a>
+            
+                <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/">课程学习</a>
+            
+            
+                <a class="nexmoefont icon-tag-fill -link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a>
+            
+        </div>
+        <article>
+            
+            <h1 id="第二章-物理层"><a href="#第二章-物理层" class="headerlink" title="第二章 物理层"></a>第二章 物理层</h1><blockquote>
+<p>物理层考虑的是怎样才能在连接各种计算机的传输媒体上传输数据，而不是指具体的传输媒体。物理层为数据链路层屏蔽了各种传输媒体的差异，使数据链路层只需要考虑如何完成本层的协议和服务，而不必考虑网络具体的传输媒体是什么。</p>
+</blockquote>
+<h3 id="物理层的主要任务"><a href="#物理层的主要任务" class="headerlink" title="物理层的主要任务"></a>物理层的主要任务</h3><p>物理层的主要任务是确定与传输媒体接口有关的一些特性：</p>
+<ul>
+<li>机械特性：指明接口所用接线器的形状和尺寸、引脚数目和排列、固定和锁定装置。</li>
+<li>电气特性：指明在接口电缆的各条线上出现的电压的范围。</li>
+<li>功能特性：指明某条线上出现的某一电平的电压表示何种意义。</li>
+<li>过程特性：指明对于不同功能的各种可能事件的出现顺序。</li>
+</ul>
+<hr>
+<h3 id="信号的传输方式"><a href="#信号的传输方式" class="headerlink" title="信号的传输方式"></a>信号的传输方式</h3><p><strong>1. 串行传输与并行传输</strong></p>
+<ul>
+<li>串行传输：比特一个接一个在一根传输线上进行传输。适合远距离传输，计算机网络采用这种传输。（速度慢、费用低，适合远距离）</li>
+<li>并行传输：多个比特同时在多根传输线上传输。不适合远距离传输，成本太高。计算机内部采用这种传输。（速度快、费用高，适合远距离）</li>
+</ul>
+<p><strong>2. 同步传输与异步传输</strong></p>
+<ul>
+<li>同步传输：比特一个接着一个传输，中间没有间隔，各比特持续时长相等。需要收发双方时钟同步，有两种方法。<ul>
+<li>外同步：在收发双方之间添加一条单独的时钟信号线。</li>
+<li>内同步：发送端将时钟同步信号编码到发送数据中一起传输（例如曼彻斯特编码）。</li>
+</ul>
+</li>
+<li>异步传输 以字节为单位进行传输，字节之间的间隔不固定，但每个字节内的比特持续时长是相等的。 换句话说，字节间异步，比特间仍是同步的。为此，需要给每个字节添加起始位和结束位。</li>
+</ul>
+<p><strong>3. 单工、半双工以及全双工传输</strong></p>
+<ul>
+<li>单工：单向通信，例如广播。（单向通信）</li>
+<li>半双工：双向交替通信（不能同时），例如对讲机。（双向交替通信）</li>
+<li>全双工：双向同时通信，例如电话。（双向同时通信）</li>
+</ul>
+<hr>
+<h3 id="数据通信中的常用术语"><a href="#数据通信中的常用术语" class="headerlink" title="数据通信中的常用术语"></a>数据通信中的常用术语</h3><ul>
+<li><p><strong>消息（message）：</strong>需要计算机处理的文字、图片、音频以及视频等统称为消息。</p>
+</li>
+<li><p><strong>数据（data）：</strong>是运送消息的实体。计算机只能处理二进制数据。</p>
+</li>
+<li><p><strong>信号：</strong>数据的电磁表现</p>
+<ul>
+<li>数字信号/连续信号</li>
+<li>模拟信号/离散信号</li>
+</ul>
+</li>
+<li><p><strong>基带信号：</strong>来自信源的原始电信号称为基带信号。</p>
+<ul>
+<li>数字基带信号：例如在计算机内部，CPU与内存之间所传输的信号。</li>
+<li>模拟基带信号：例如，麦克风采集到声音后所产生的音频信号。</li>
+</ul>
+</li>
+<li><p><strong>调制：</strong>基带信号往往包含许多低频成分，甚至有直流成分，而许多信道不能传输这种低频分量或直流分量，因此必须进行调制。</p>
+<ul>
+<li><strong>基带调制/编码：</strong>仅仅对信号的波形进行变换，使它能与信道特性相适应，变换后的信号任然是基带信号。（数字信道，基带传输）</li>
+<li><strong>带通调制：</strong>使用载波进行调制，把基带信号的频率范围搬移到较高的频段，并转换为模拟信号，这样就能更好的在模拟信道中传输。经过载波调制后的信号为带通信号。（模拟信道，宽带传输）</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h3><ol>
+<li><p><strong>两类编码</strong></p>
+<ul>
+<li>数字信号转换为另一种数字信号， 在数字信道中传输。</li>
+<li>模拟信号转换为数字信号 ，在数字信道中传输。</li>
+</ul>
+</li>
+<li><p><strong>常用编码</strong></p>
+<p><img src="2-1.png" alt=""></p>
+<ul>
+<li>不归零编码（正1负0）<ul>
+<li>在整个码元时间内不会出现零电平</li>
+<li>存在同步问题，需要额外一根传输线来传输时钟信号，使发送方和接收方同步。</li>
+<li>对于计算机网络，宁愿利用这根传输线传输数据信号，而不是传输时钟信号。</li>
+</ul>
+</li>
+<li>归零编码（每一码元内都要归为0）<ul>
+<li>每个码元传输结束后信号都要“归零”，所以接收方只要在信号归零后进行采样即可，不需要单独的时钟信号。</li>
+<li>实际上，归零编码相当于把时钟信号用“归零”方式编码在了数据之内，这称为“自同步”信号。</li>
+<li>但是，归零编码中大部分的数据带宽，都用来传输“归零”而浪费掉了。</li>
+</ul>
+</li>
+<li>曼彻斯特编码（前高后低、前低后高分别代表0、1（或1、0））<ul>
+<li>在码元中间时刻发生电平跳变，既表示时钟，也表示数据</li>
+<li>正跳变表示1或0，负跳变表示0或1，可自行定义</li>
+<li>传统以太网（10Mb/s）使用该编码</li>
+</ul>
+</li>
+<li>差分曼彻斯特编码(同1异0)<ul>
+<li>在码元中间时刻发生电平跳变，跳变仅表示时钟。</li>
+<li>码元开始处电平是否发生变化表示数据。</li>
+<li>比曼彻斯特编码变化少，更适合较高的传输速率。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="调制"><a href="#调制" class="headerlink" title="调制"></a>调制</h3><ol>
+<li><p><strong>两类调制</strong></p>
+<ul>
+<li><p>数字信号转换为模拟信号，在模拟信道中传输。</p>
+</li>
+<li><p>模拟信号转换为另一种模拟信号，在模拟信道中传输。</p>
+</li>
+</ul>
+<p><img src="2-2.png" alt=""></p>
+</li>
+<li><p><strong>基本带通调制方法（二元制）</strong></p>
+<ul>
+<li>调幅AM：即载波的振幅随基带数字信号而变化。<ul>
+<li>所调制的信号由两种不同振幅的基本波形构成。</li>
+<li>每个基本波形只能表示1比特信息量。</li>
+</ul>
+</li>
+<li>调频FM：即载波的频率随基带数字信号而变化。<ul>
+<li>所调制的信号由两种不同频率的基本波形构成。</li>
+<li>每个基本波形只能表示1比特信息量。</li>
+</ul>
+</li>
+<li>调相PM：即载波的初始相位随基带数字信号而变化。<ul>
+<li>所调制的信号由两种不同初相位的基本波形构成。</li>
+<li>每个基本波形只能表示1比特信息量。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>混合调制（多元制）</strong></p>
+</li>
+</ol>
+<blockquote>
+<p>为了提高信息传输速率，必须采用技术上更为复杂的多元制的振幅相位混合调制方法。例如，将相位与振幅进行混合调制的正交振幅调制QAM。QAM16可以调制出12种相位，每种相位有1或2个种振幅可选。可以调制出16种基本波形，每种波形可以对应表示4个比特。</p>
+</blockquote>
+<hr>
+<h3 id="信道的极限容量"><a href="#信道的极限容量" class="headerlink" title="信道的极限容量"></a>信道的极限容量</h3><ol>
+<li><strong>造成信号失真的因素</strong><ul>
+<li>码元传输速率（越高越失真）</li>
+<li>信号传输距离</li>
+<li>噪声干扰</li>
+<li>传输媒体质量</li>
+</ul>
+</li>
+<li><strong>奈氏准则</strong></li>
+</ol>
+<blockquote>
+<p>在任何信道中，码元传输速率是有上限的，传输速率超过此上限，就会出现严重的码间串扰问题，使接收端对码元的判决（即识别）成为不可能。如果信号的频带越宽，也就是能通过的信号高频分量越多，那么就可以以更高的速率传送码元而不出现码间串扰。</p>
+</blockquote>
+<ul>
+<li><p>理想低通信道的最高码元传输速率 </p>
+<ul>
+<li>2W Baud = 2W 波特 = 2W 码元/秒。其中，W为信道带宽，单位是Hz。</li>
+</ul>
+</li>
+<li><p>理想带通信道的最高码元传输速率</p>
+<ul>
+<li>W Baud = W 波特 = W 码元/秒。其中，W为信道带宽，单位是Hz。</li>
+</ul>
+</li>
+<li><p>注意</p>
+<ul>
+<li>实际的信道所能传输的最高码元速率，要明显低于奈氏准则给出的这个上限值。这是因为实际信道还会受到其他很多因素干扰（例如噪声干扰、信号衰减、传输媒体质量等）。</li>
+<li>要提高信息传输速率（比特率），就必须设法使每一个码元能携带更多个比特的信息量。这需要采用多元制。</li>
+<li>并不是无限制提高每个码元携带的比特数量，就可以无限制地提高信息的传输速率。因为信道的极限信息传输速率还要受限于实际的信号在信道中传输时的信噪比。</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li><strong>香农公式</strong></li>
+</ol>
+<blockquote>
+<p>香农公式指出了信道的极限传输速率。</p>
+</blockquote>
+<ul>
+<li>信噪比：信号的平均功率和噪声的平均功率之比<ul>
+<li>两种表示方法<ul>
+<li>S/N</li>
+<li>信噪比(dB) = 10 log10(S/N)(dB)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>信道的极限传输速率：c = W x log2 (1 + S/N)</li>
+<li>注意<ul>
+<li>在实际信道上能够达到的信息传输速率要比该公式的极限传输速率低不少。这是因为在实际信道中，信号还要收到其他一些损伤，如各种脉冲干扰、信号在传输中的衰减和失真等，这些因素在香农公式中并未考虑。</li>
+<li>信道带宽或信道中信噪比越大，信息的极限传输速率越高。</li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li><strong>奈氏准则和香农公式的意义</strong><ul>
+<li>在信道带宽一定的情况下，根据奈氏准则和香农公式，要想提高信息的传输速率就必须采用多元制（更好的调制方法）和努力提高信道中的信噪比。</li>
+<li>自从香农公式发表后，各种新的信号处理和调制方法就不断出现，其目的都是为了尽可能地接近香农公式给出的传输速率极限。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="物理层下的传输媒体"><a href="#物理层下的传输媒体" class="headerlink" title="物理层下的传输媒体"></a>物理层下的传输媒体</h3><blockquote>
+<p><strong>传输媒体：</strong>也叫为传输介质或传输媒介，他就是数据传输系统中在发送器和接收器之间的物理通路，可分为引导型传输媒体和非引导型传输媒体。</p>
+</blockquote>
+<ol>
+<li><p><strong>引导型传输媒体</strong></p>
+<ul>
+<li><strong>同轴电缆</strong><ul>
+<li>基带同轴电缆（50欧）  用于数字传输，过去用于局域网，现在局域网领域采用双绞线。</li>
+<li>宽带同轴电缆（75欧）  用于模拟传输，目前主要用于有线电视。</li>
+</ul>
+</li>
+<li><strong>双绞线</strong><ul>
+<li>目前的家用以太网，最低应选用超5类（5E）双绞线。</li>
+<li>屏蔽双绞线（STP）比非屏蔽双绞线（UTP）具有更好的抗干扰性能，但价格也更贵。</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>绞合的作用：</strong></p>
+<ol>
+<li>抵御部分来自外界的电磁干扰</li>
+<li>减少相邻导线的电磁干扰</li>
+</ol>
+</blockquote>
+<ul>
+<li><strong>光纤</strong><ul>
+<li><strong>多模光纤：</strong>存在多条不同角度入射的光线在一条光纤中传输。<ol>
+<li>光在多模光纤中不断全反射向前传输</li>
+<li>由于色散问题，光在多模光纤会产生脉冲展宽的问题</li>
+<li>多模光纤只适用于近距离传输（建筑物内）</li>
+<li>多模光纤对光源要求不高。可采用便宜的发光二极管作为光源。相应的，可采用光电二极管来检测光脉冲。</li>
+</ol>
+</li>
+<li><strong>单模光纤：</strong><ol>
+<li>单模光纤的直径仅一个光波的波长。光在其中一直向前传播而不发生全反射。</li>
+<li>单模光纤没有脉冲展宽问题</li>
+<li>单模光纤适合长距离传输且衰减小，但其制造成本高，对光源要求高。</li>
+<li>必须使用昂贵的激光发生器作为光源。相应的，需要使用激光检波器来检测光脉冲。</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>非引导型传输媒体</strong></p>
+<ul>
+<li>无线电波：<ul>
+<li>低频LF和中频MF频段，使用<strong>地面波</strong>传输</li>
+<li>高频HF和甚高频VHF频段，依靠<strong>电离层的反射</strong>进行传输</li>
+</ul>
+</li>
+<li>微波：<ul>
+<li>直线传播，可以穿透电离层</li>
+<li>地面100米发生塔，最大视距LOS传输距离为100公里</li>
+<li>地球同步卫星</li>
+<li>低轨道卫星</li>
+</ul>
+</li>
+<li>红外线<ul>
+<li>点对点传输</li>
+<li>直线传输、中间不能有障碍物，传输距离短</li>
+<li>传输速率低（4Mb/s ~ 16Mb/s）</li>
+<li>笔记本电脑上已经淘汰</li>
+</ul>
+</li>
+<li>可见光<ul>
+<li>LiFi比WiFi具有更高的传输速率</li>
+<li>目前还在实验研究阶段</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="常见物理层网络设备"><a href="#常见物理层网络设备" class="headerlink" title="常见物理层网络设备"></a>常见物理层网络设备</h3><ol>
+<li>中继器：再生和还原信号（再生数字信号）</li>
+<li>集线器/多口中继器：放大再生信号</li>
+</ol>
+<hr>
+<h3 id="宽带接入技术"><a href="#宽带接入技术" class="headerlink" title="宽带接入技术"></a>宽带接入技术</h3><ol>
+<li>ASDL：即非对称数字用户线，用数字技术对现有的模拟点号用户线进行改造。</li>
+<li>光纤同轴混合网（HFC网）：在有线电视网的基础上开发的。</li>
+<li>FTTx技术：即光纤到x，如光纤到户FTTH，光线到大楼FTTB等。</li>
+</ol>
+
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
         <a href="/2019/11/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-ch1/">
             <div class="nexmoe-post-cover mdui-ripple"> 
                 
-                    <img src="https://i.loli.net/2019/01/13/5c3aec85a4343.jpg" alt="计算机网络-ch1">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1574168652977&di=984b0ce4df0ea3921fab88036d5d0313&imgtype=0&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F30adcbef76094b3678428e53a2cc7cd98c109db8.jpg" alt="计算机网络-ch1">
                 
                 <h1>计算机网络-ch1</h1>
             </div>
@@ -157,7 +460,7 @@
             <a><i class="nexmoefont icon-areachart"></i>2.8k 字</a>
             <a><i class="nexmoefont icon-time-circle-fill"></i>大概 11 分钟</a>
             
-                <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a>
+                <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0/">课程学习</a>
             
             
                 <a class="nexmoefont icon-tag-fill -link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" rel="tag">计算机网络</a>
@@ -402,7 +705,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1574149633884"></script>
+<script src="/js/app.js?v=1574158654961"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
